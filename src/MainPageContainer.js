@@ -13,7 +13,7 @@ class MainPageContainer extends Component{
       super(props);
       this.state = {
         sortMethod: "name",
-        restaurants: ['one', 'two', 'three' ]
+        restaurants: []
       };
       getJson('restaurants_minified.json').then( restaurantData => {
         this.setState({ restaurants: restaurantData});
