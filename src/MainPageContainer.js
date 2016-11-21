@@ -15,7 +15,7 @@ class MainPageContainer extends Component{
         sortMethod: "name",
         restaurants: []
       };
-      getJson('restaurants_minified.json').then( restaurantData => {
+      getJson('./restaurants_minified.json').then( restaurantData => {
         this.setState({ restaurants: restaurantData});
         console.log(this.state.restaurants);
       });
